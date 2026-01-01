@@ -1,0 +1,9 @@
+version: '3'
+services:
+  read-around:
+    build: .
+    restart: on-failure
+    container_name: 'sheesh'
+    read_only: true
+    ports:
+      - 9057:8010
