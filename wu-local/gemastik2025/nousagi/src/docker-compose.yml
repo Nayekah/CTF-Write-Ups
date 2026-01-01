@@ -1,0 +1,9 @@
+version: '3'
+services:
+  read-around:
+    build: .
+    restart: on-failure
+    container_name: 'nousagi'
+    read_only: true
+    ports:
+      - 9054:8010

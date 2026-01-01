@@ -1,0 +1,10 @@
+version: '1'
+name: 'vibes'
+services:
+  read-around:
+    build: .
+    restart: on-failure
+    container_name: 'vibes'
+    read_only: true
+    ports:
+      - 9055:8010
