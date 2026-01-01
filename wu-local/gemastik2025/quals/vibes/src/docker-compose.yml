@@ -1,5 +1,4 @@
-version: '1'
-name: 'vibes'
+version: '3'
 services:
   read-around:
     build: .
