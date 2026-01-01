@@ -1,0 +1,9 @@
+version: '3'
+services:
+  read-around:
+    build: .
+    restart: on-failure
+    container_name: 'phew'
+    read_only: true
+    ports:
+      - 9056:8010
