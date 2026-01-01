@@ -1,0 +1,15 @@
+[package]
+name = "solve"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0"
+ark-bn254 = "0.3.0"
+ark-ec = "0.3.0"
+ark-ff = "0.3.0"
+ark-groth16 = "0.3.0"
+ark-serialize = "=0.3.0"
+hex = "0.4"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
