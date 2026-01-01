@@ -29,7 +29,7 @@ def inv_mod(a, n):
     a %= n
     g = math.gcd(a, n)
     if g != 1:
-        raise ValueError(f"no inverse for {a} mod N, gcd={g} (this would actually factor N)")
+        raise ValueError(f"no inverse for {a} mod N, gcd={g}")
     return pow(a, -1, n)
 
 def int_to_bytes(n: int) -> bytes:
@@ -268,9 +268,6 @@ def main():
     flag_out = int(out["flag"])
 
     e = 5
-    if e != 5:
-        raise ValueError("This solver is specialized for e=5 (matches this chall).")
-
     w = sum_cs % N
     a = [li % N for li in ls]
 
