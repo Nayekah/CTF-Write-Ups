@@ -1,1 +1,4 @@
-# crypto
+# Write-Ups
+
+
+mostly baru crypto
